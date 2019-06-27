@@ -196,7 +196,10 @@ define([
 				});
 
 				// Limit path length
-				if (object.path.length > Math.min(120, getObjectRadius(object) * 20 / getVelocity(object))) {
+//				if (object.path.length > Math.min(120, getObjectRadius(object) * 20 / getVelocity(object))) {
+				var v = getVelocity(object);
+				if (object.path.length > 120 / Math.log(v*0.9) ) {
+	
 					object.path.splice(0, 1);
 				};
 				

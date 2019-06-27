@@ -176,7 +176,7 @@ define(['jquery', 'underscore'], function($, _){
                     );
 
 	                ctx.lineWidth = 1;
-	                ctx.strokeStyle = "#666";
+	                ctx.strokeStyle = "#F00";
 	                ctx.stroke();
 	            };
 	        })();
